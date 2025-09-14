@@ -25,7 +25,7 @@ emailRouter.post("/analyze-email",  upload.single("email"),
 
         return res.status(200).json({
             success: true,
-            message: 'URL analyzed successfully',
+            message: 'Email analyzed successfully',
             data: analysis
         })
     })

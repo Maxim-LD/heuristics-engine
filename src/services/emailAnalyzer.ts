@@ -69,6 +69,9 @@ export const analyzeEmail = (email: EmailInput) => {
 
         // Return the analysis result
         return {
+            subject: email.subject,
+            from: email.from,
+            urls: email.urls,
             riskScore: finalScore,
             reasons,
             verdict,
